@@ -1,17 +1,4 @@
-<h1 align="center">Ecommerce - API REST</h1>
-
-<p align="center">
-
-  <a href="https://github.com/nelsonwenner">
-    <img alt="Made by @nelsonwenner" src="https://img.shields.io/badge/made%20by-%40nelsonwenner-%2304D361">
-  </a>
-
-  <img alt="License" src="https://img.shields.io/badge/license-MIT-%2304D361">
-</p>
-
-<div align="center">
-  <img alt="dashboard" src="./screens/dashboard.png" />
-</div>
+<h1 align="center">Keluban Ecommerce - Backend</h1>
 
 ## :rocket: Technologies
 * [Docker](https://www.docker.com/)
@@ -20,12 +7,6 @@
 * [Celery](https://docs.celeryproject.org/en/latest/django/first-steps-with-django.html)
 * [Django rest framework](https://www.django-rest-framework.org/)
 * [Django](https://www.djangoproject.com/)
-
-## :telescope: Diagram Database
-
-<p align="center">
-  <img alt="diagram" src="./screens/diagram.png" />
-</p>
 
 ## :shield: Admin Access dashboard
 
