@@ -1,0 +1,74 @@
+version: "3.7"
+
+services:
+  app:
+    build: .
+    container_name: micro-ecommerce-app
+    working_dir: /home/django/app
+    entrypoint: ./.docker/app-entrypoint.sh
+    volumes:
+      - .:/home/django/app
+    ports:
+      - "8000:8000"
+    depends_on:
+      - database
+      - rabbitmq
+    networks:
+      - default
+  
+  worker:
+    build: .
+    container_name: micro-ecommerce-worker
+    restart: on-failure
+    entrypoint: ./.docker/worker-entrypoint.sh
+    volumes:
+      - .:/home/django/app
+    depends_on:
+      - app
+      - database
+    networks:
+      - default
+  
+  database:
+    container_name: "ecommerce-database"
+    image: library/postgres:9.6-alpine
+    ports: 
+      - "5438:5439"
+    volumes: 
+      - ./.docker/postgres/data:/var/lib/postgresql/12/data
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=coyg212-
+      - POSTGRES_DB=database
+    restart: always
+    tty: true
+    networks:
+      - default
+    
+  rabbitmq:
+    image: 'rabbitmq:3.8-management-alpine'
+    container_name: ecommerce-rabbitmq
+    hostname: rabbitmq
+    ports:
+      - "15672:15672"
+      - "5672:5672"
+    volumes:
+      - './.docker/rabbitmq/data:/var/lib/rabbitmq/mnesia'
+    environment:
+      - RABBITMQ_DEFAULT_USER=admin 
+      - RABBITMQ_DEFAULT_PASS=admin
+    networks:
+      - default
+  
+  adminer:
+    container_name: adminer-container
+    image: adminer
+    ports:
+      - 8080:8080
+    restart: always
+    networks: 
+      - default
+
+networks:
+  default:
+    driver: bridge

@@ -1,0 +1,413 @@
+[ 
+  {
+    "model": "payment_gateway.paymentgateway",
+    "pk": "e1182700-d1b0-4585-99bf-6510497602ab",
+    "fields": {
+      "name": "Pagarme",
+      "default": true,
+      "polymorphic_ctype_id": 8,
+      "created_at": "2020-01-01T00:01:00.000Z",
+      "updated_at": "2020-01-01T00:01:00.000Z"
+    }
+  },
+
+  {
+    "model": "payment_gateway.pagarmegateway",
+    "pk": "e2282812-d1b0-4585-99bf-6510497602ab",
+    "fields": {
+      "api_key": "ak_test_grXijQ4GicOa2BLGZrDRTR5qNQxJW0",
+      "encryption_key": "ek_test_aHGru3d5a7qweiftqXg1bQvbN1c7K0",
+      "paymentgateway_ptr_id": "e1182700-d1b0-4585-99bf-6510497602ab"
+    }
+  },
+
+  {
+    "model": "payment_gateway.paymentmethod",
+    "pk": "e0182812-d1b0-4585-99bf-6510497602ab",
+    "fields": {
+      "name": "billet",
+      "allow_installments": false,
+      "created_at": "2020-01-01T00:01:00.000Z",
+      "updated_at": "2020-01-01T00:01:00.000Z"
+    }
+  },
+
+  {
+    "model": "payment_gateway.paymentmethod",
+    "pk": "e0282812-d1b0-4585-99bf-6510497602ab",
+    "fields": {
+      "name": "credit_card",
+      "allow_installments": true,
+      "created_at": "2020-01-01T00:01:00.000Z",
+      "updated_at": "2020-01-01T00:01:00.000Z"
+    }
+  },
+
+  {
+    "model": "payment_gateway.paymentmethodconfig",
+    "pk": "e0188888-d1b0-4585-99bf-6510497602ab",
+    "fields": {
+      "max_installments": 12,
+      "discount_percentage": 0,
+      "payment_method_id": "e0282812-d1b0-4585-99bf-6510497602ab",
+      "created_at": "2020-01-01T00:01:00.000Z",
+      "updated_at": "2020-01-01T00:01:00.000Z"
+    }
+  },
+  
+  {
+    "model": "payment_gateway.paymentmethodconfig",
+    "pk": "e0199999-d1b0-4585-99bf-6510497602ab",
+    "fields": {
+      "max_installments": 0,
+      "discount_percentage": 10,
+      "payment_method_id": "e0182812-d1b0-4585-99bf-6510497602ab",
+      "created_at": "2020-01-01T00:01:00.000Z",
+      "updated_at": "2020-01-01T00:01:00.000Z"
+    }
+  },
+
+  {
+    "model": "core.status",
+    "pk": "e1182812-d1b0-4585-99bf-6510497602ab",
+    "fields": {
+      "message": "Processing Purchase",
+      "created_at": "2020-01-01T00:01:00.000Z",
+      "updated_at": "2020-01-01T00:01:00.000Z"
+    }
+  },
+
+  {
+    "model": "core.status",
+    "pk": "e2182812-d1b0-4585-99bf-6510497602ab",
+    "fields": {
+      "message": "Approved Purchase",
+      "created_at": "2020-01-01T00:01:00.000Z",
+      "updated_at": "2020-01-01T00:01:00.000Z"
+    }
+  },
+  
+  {
+    "model": "core.status",
+    "pk": "e3182812-d1b0-4585-99bf-6510497602ab",
+    "fields": {
+      "message": "Purchase Denied",
+      "created_at": "2020-01-01T00:01:00.000Z",
+      "updated_at": "2020-01-01T00:01:00.000Z"
+    }
+  },
+
+  {
+    "model": "core.category",
+    "pk": "e5182812-d1b0-4585-99bf-6510497602ab",
+    "fields": {
+      "name": "Sayuran",
+      "slug": "sayuran-6510497602ab",
+      "created_at": "2020-01-01T00:01:00.000Z",
+      "updated_at": "2020-01-01T00:01:00.000Z"
+    }
+  },
+
+  {
+    "model": "core.category",
+    "pk": "e5182812-d1b0-4585-99bf-6510497603ab",
+    "fields": {
+      "name": "Buah",
+      "slug": "buah-6510497602ab",
+      "created_at": "2020-01-01T00:01:00.000Z",
+      "updated_at": "2020-01-01T00:01:00.000Z"
+    }
+  },
+
+  {
+    "model": "core.category",
+    "pk": "e5182812-d1b0-4585-99bf-6510497604ab",
+    "fields": {
+      "name": "Bumbu Dapur",
+      "slug": "bumbu-dapur-6510497602ab",
+      "created_at": "2020-01-01T00:01:00.000Z",
+      "updated_at": "2020-01-01T00:01:00.000Z"
+    }
+  },
+
+  {
+    "model": "core.category",
+    "pk": "e5182812-d1b0-4585-99bf-6510497605ab",
+    "fields": {
+      "name": "Lauk Pauk",
+      "slug": "lauk-pauk-6510497602ab",
+      "created_at": "2020-01-01T00:01:00.000Z",
+      "updated_at": "2020-01-01T00:01:00.000Z"
+    }
+  },
+   
+  {
+    "model": "core.product",
+    "pk": "e5180912-d1b0-4585-99bf-6511497605ab",
+    "fields": {
+      "title": "Brokoli",
+      "description": "",
+      "price": 9000.0,
+      "stock": 40,
+      "category_id": "e5182812-d1b0-4585-99bf-6510497602ab",
+      "image": "/uploads/product/df9e72b2-daea-46d2-94cf-cc041ab620a5Brokoli_.png",
+      "created_at": "2020-01-01T00:01:00.000Z",
+      "updated_at": "2020-01-01T00:01:00.000Z"
+    }
+  },
+
+  {
+    "model": "core.product",
+    "pk": "e5182812-d1b0-4585-99bf-6512497999ab",
+    "fields": {
+      "title": "Bayam",
+      "description": "",
+      "price": 2000.0,
+      "stock": 20,
+      "category_id": "e5182812-d1b0-4585-99bf-6510497604ab",
+      "image": "/uploads/product/69708b99-10a5-4404-b7c1-1c32cb02fbbaBayam_.png",
+      "created_at": "2020-01-01T00:01:00.000Z",
+      "updated_at": "2020-01-01T00:01:00.000Z"
+    }
+  },
+
+  {
+    "model": "core.product",
+    "pk": "e5182812-d1b0-4585-99bf-6513497605ab",
+    "fields": {
+      "title": "Buncis",
+      "description": "",
+      "price": 3000.0,
+      "stock": 45,
+      "category_id": "e5182812-d1b0-4585-99bf-6510497603ab",
+      "image": "/uploads/product/4067b9a9-834b-4e19-bfd9-811c4c50801bBuncis_.png",
+      "created_at": "2020-01-01T00:01:00.000Z",
+      "updated_at": "2020-01-01T00:01:00.000Z"
+    }
+  },
+
+  {
+    "model": "core.product",
+    "pk": "e5281819-d4b0-4585-99bf-6599497605ab",
+    "fields": {
+      "title": "Selada",
+      "description": "",
+      "price": 4000.0,
+      "stock": 47,
+      "category_id": "e5182812-d1b0-4585-99bf-6510497603ab",
+      "image": "/uploads/product/9a8ed12a-cd44-4e6d-bdfc-47510a2ab2dbSelada_.png",
+      "created_at": "2020-01-01T00:01:00.000Z",
+      "updated_at": "2020-01-01T00:01:00.000Z"
+    }
+  },
+
+  {
+    "model": "core.product",
+    "pk": "e9289819-d8b0-4595-99bf-6514497605ab",
+    "fields": {
+      "title": "Terong Ungu",
+      "description": "",
+      "price": 6000.0,
+      "stock": 12,
+      "category_id": "e5182812-d1b0-4585-99bf-6510497603ab",
+      "image": "/uploads/product/f9fc8d6f-e772-4539-8cab-c662fbae5998Terong_.png",
+      "created_at": "2020-01-01T00:01:00.000Z",
+      "updated_at": "2020-01-01T00:01:00.000Z"
+    }
+  },
+
+  {
+    "model": "core.product",
+    "pk": "e5311819-d8b0-4595-99bf-6514497995ab",
+    "fields": {
+      "title": "Labu Siam",
+      "description": "",
+      "price": 4000.0,
+      "stock": 458,
+      "category_id": "e5182812-d1b0-4585-99bf-6510497605ab",
+      "image": "/uploads/product/0b3f86f0-7e65-43c1-8c56-d2440c825c30Labu_.png",
+      "created_at": "2020-01-01T00:01:00.000Z",
+      "updated_at": "2020-01-01T00:01:00.000Z"
+    }
+  },
+
+  {
+    "model": "core.product",
+    "pk": "e5191819-d1b0-4195-11bf-6514497609ab",
+    "fields": {
+      "title": "Kangkung",
+      "description": "",
+      "price": 6000.0,
+      "stock": 33,
+      "category_id": "e5182812-d1b0-4585-99bf-6510497603ab",
+      "image": "/uploads/product/10822a55-91f4-4c8a-a61e-7e6a5f24d3feKangkung_.png",
+      "created_at": "2020-01-01T00:01:00.000Z",
+      "updated_at": "2020-01-01T00:01:00.000Z"
+    }
+  },
+
+  {
+    "model": "core.product",
+    "pk": "e1221819-d1b0-4195-19bf-6594497605ab",
+    "fields": {
+      "title": "Kentang",
+      "description": "",
+      "price": 10000.0,
+      "stock": 12,
+      "category_id": "e5182812-d1b0-4585-99bf-6510497602ab",
+      "image": "/uploads/product/493e5b06-d3ab-40f2-bf7d-946fa9f314a1Kentang_.png",
+      "created_at": "2020-01-01T00:01:00.000Z",
+      "updated_at": "2020-01-01T00:01:00.000Z"
+    }
+  },
+
+  {
+    "model": "core.product",
+    "pk": "e1222349-d1b0-4195-11bf-9914497605ab",
+    "fields": {
+      "title": "Kembang Kol",
+      "description": "",
+      "price": 8000.0,
+      "stock": 26,
+      "category_id": "e5182812-d1b0-4585-99bf-6510497603ab",
+      "image": "/uploads/product/a725a859-2fb4-4e1d-b9e0-8a1565cfe43eKembangkol_.png",
+      "created_at": "2020-01-01T00:01:00.000Z",
+      "updated_at": "2020-01-01T00:01:00.000Z"
+    }
+  },
+
+  {
+    "model": "core.product",
+    "pk": "e1222349-d1b0-4195-11bf-6523197605ab",
+    "fields": {
+      "title": "Jambu",
+      "description": "",
+      "price": 12000.0,
+      "stock": 99,
+      "category_id": "e5182812-d1b0-4585-99bf-6510497604ab",
+      "image": "/uploads/product/533affd4-7857-4fba-b9b2-1118c2915807jambu_.jpg",
+      "created_at": "2020-01-01T00:01:00.000Z",
+      "updated_at": "2020-01-01T00:01:00.000Z"
+    }
+  },
+
+  {
+    "model": "core.product",
+    "pk": "e1331349-d1b0-4195-11bf-6529197605ab",
+    "fields": {
+      "title": "Pepaya",
+      "description": "",
+      "price": 10000.0,
+      "stock": 78,
+      "category_id": "e5182812-d1b0-4585-99bf-6510497605ab",
+      "image": "/uploads/product/d2a54f45-c12f-4909-a3e0-bddcc692cac4pepaya_.jpg",
+      "created_at": "2020-01-01T00:01:00.000Z",
+      "updated_at": "2020-01-01T00:01:00.000Z"
+    }
+  },
+
+  {
+    "model": "core.product",
+    "pk": "e1331349-d1b0-4195-11bf-6523111105ab",
+    "fields": {
+      "title": "Rambutan",
+      "description": "",
+      "price": 199.0,
+      "stock": 28,
+      "category_id": "e5182812-d1b0-4585-99bf-6510497604ab",
+      "image": "/uploads/product/c85a9076-0445-41cd-87df-ca70b1ee03f5rambutan_.jpg",
+      "created_at": "2020-01-01T00:01:00.000Z",
+      "updated_at": "2020-01-01T00:01:00.000Z"
+    }
+  },
+
+  {
+    "model": "core.product",
+    "pk": "e1331349-d1b0-4195-11bf-6523223305ab",
+    "fields": {
+      "title": "Pisang",
+      "description": "",
+      "price": 13000.0,
+      "stock": 11,
+      "category_id": "e5182812-d1b0-4585-99bf-6510497602ab",
+      "image": "/uploads/product/4298e4b3-270f-4c80-ac88-e125039d0d9fpisang_.jpg",
+      "created_at": "2020-01-01T00:01:00.000Z",
+      "updated_at": "2020-01-01T00:01:00.000Z"
+    }
+  },
+
+  {
+    "model": "core.product",
+    "pk": "e1331349-d1b0-4195-11bf-6599543305ab",
+    "fields": {
+      "title": "Jeruk",
+      "description": "",
+      "price": 15000.0,
+      "stock": 27,
+      "category_id": "e5182812-d1b0-4585-99bf-6510497602ab",
+      "image": "/uploads/product/be93f50b-2a53-4d97-84c4-869491699536jeruk_.jpg",
+      "created_at": "2020-01-01T00:01:00.000Z",
+      "updated_at": "2020-01-01T00:01:00.000Z"
+    }
+  },
+
+  {
+    "model": "core.product",
+    "pk": "e1391349-d1b0-4195-11bf-6019511905ab",
+    "fields": {
+      "title": "Semangka",
+      "description": "",
+      "price": 25000.0,
+      "stock": 27,
+      "category_id": "e5182812-d1b0-4585-99bf-6510497604ab",
+      "image": "/uploads/product/99ec9a53-c14a-4368-8414-bc9d295af28dsemangka_.jpg",
+      "created_at": "2020-01-01T00:01:00.000Z",
+      "updated_at": "2020-01-01T00:01:00.000Z"
+    }
+  },
+
+  {
+    "model": "core.product",
+    "pk": "e1331949-d1b0-4195-11bf-6019500005ab",
+    "fields": {
+      "title": "Buah Naga",
+      "description": "",
+      "price": 40000.0,
+      "stock": 6,
+      "category_id": "e5182812-d1b0-4585-99bf-6510497604ab",
+      "image": "/uploads/product/e57d828b-d0ee-486c-bb98-52285e2b9159buahnaga_.jpg",
+      "created_at": "2020-01-01T00:01:00.000Z",
+      "updated_at": "2020-01-01T00:01:00.000Z"
+    }
+  },
+
+  {
+    "model": "core.product",
+    "pk": "e1339349-d1b0-4195-11bf-6011500115ab",
+    "fields": {
+      "title": "Nanas",
+      "description": "",
+      "price": 20000.0,
+      "stock": 100,
+      "category_id": "e5182812-d1b0-4585-99bf-6510497604ab",
+      "image": "/uploads/product/67956159-1ea5-4505-b21a-a171c2328a40nanas_.jpg",
+      "created_at": "2020-01-01T00:01:00.000Z",
+      "updated_at": "2020-01-01T00:01:00.000Z"
+    }
+  },
+
+  {
+    "model": "core.product",
+    "pk": "e0900349-d0b0-4195-11bf-6011500115ab",
+    "fields": {
+      "title": "Alpukat",
+      "description": "",
+      "price": 30000.0,
+      "stock": 61,
+      "category_id": "e5182812-d1b0-4585-99bf-6510497602ab",
+      "image": "/uploads/product/af19f186-78ed-4637-b9ff-c04723c0df38alpukat_.jpg",
+      "created_at": "2020-01-01T00:01:00.000Z",
+      "updated_at": "2020-01-01T00:01:00.000Z"
+    }
+  }
+]
