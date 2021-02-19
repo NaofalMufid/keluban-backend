@@ -147,6 +147,7 @@
     "fields": {
       "title": "Brokoli",
       "description": "",
+      "piece": "kg",
       "price": 9000.0,
       "stock": 40,
       "category_id": "e5182812-d1b0-4585-99bf-6510497602ab",
@@ -162,6 +163,7 @@
     "fields": {
       "title": "Bayam",
       "description": "",
+      "piece": "kg",
       "price": 2000.0,
       "stock": 20,
       "category_id": "e5182812-d1b0-4585-99bf-6510497604ab",
@@ -177,6 +179,7 @@
     "fields": {
       "title": "Buncis",
       "description": "",
+      "piece": "kg",
       "price": 3000.0,
       "stock": 45,
       "category_id": "e5182812-d1b0-4585-99bf-6510497603ab",
@@ -192,6 +195,7 @@
     "fields": {
       "title": "Selada",
       "description": "",
+      "piece": "ikat",
       "price": 4000.0,
       "stock": 47,
       "category_id": "e5182812-d1b0-4585-99bf-6510497603ab",
@@ -207,6 +211,7 @@
     "fields": {
       "title": "Terong Ungu",
       "description": "",
+      "piece": "kg",
       "price": 6000.0,
       "stock": 12,
       "category_id": "e5182812-d1b0-4585-99bf-6510497603ab",
@@ -222,6 +227,7 @@
     "fields": {
       "title": "Labu Siam",
       "description": "",
+      "piece": "buah",
       "price": 4000.0,
       "stock": 458,
       "category_id": "e5182812-d1b0-4585-99bf-6510497605ab",
@@ -237,6 +243,7 @@
     "fields": {
       "title": "Kangkung",
       "description": "",
+      "piece": "ikat",
       "price": 6000.0,
       "stock": 33,
       "category_id": "e5182812-d1b0-4585-99bf-6510497603ab",
@@ -252,6 +259,7 @@
     "fields": {
       "title": "Kentang",
       "description": "",
+      "piece": "kg",
       "price": 10000.0,
       "stock": 12,
       "category_id": "e5182812-d1b0-4585-99bf-6510497602ab",
@@ -267,6 +275,7 @@
     "fields": {
       "title": "Kembang Kol",
       "description": "",
+      "piece": "kg",
       "price": 8000.0,
       "stock": 26,
       "category_id": "e5182812-d1b0-4585-99bf-6510497603ab",
@@ -282,6 +291,7 @@
     "fields": {
       "title": "Jambu",
       "description": "",
+      "piece": "kg",
       "price": 12000.0,
       "stock": 99,
       "category_id": "e5182812-d1b0-4585-99bf-6510497604ab",
@@ -297,6 +307,7 @@
     "fields": {
       "title": "Pepaya",
       "description": "",
+      "piece": "buah",
       "price": 10000.0,
       "stock": 78,
       "category_id": "e5182812-d1b0-4585-99bf-6510497605ab",
@@ -312,6 +323,7 @@
     "fields": {
       "title": "Rambutan",
       "description": "",
+      "piece": "kg",
       "price": 199.0,
       "stock": 28,
       "category_id": "e5182812-d1b0-4585-99bf-6510497604ab",
@@ -327,6 +339,7 @@
     "fields": {
       "title": "Pisang",
       "description": "",
+      "piece": "sisir",
       "price": 13000.0,
       "stock": 11,
       "category_id": "e5182812-d1b0-4585-99bf-6510497602ab",
@@ -342,6 +355,7 @@
     "fields": {
       "title": "Jeruk",
       "description": "",
+      "piece": "kg",
       "price": 15000.0,
       "stock": 27,
       "category_id": "e5182812-d1b0-4585-99bf-6510497602ab",
@@ -357,6 +371,7 @@
     "fields": {
       "title": "Semangka",
       "description": "",
+      "piece": "buah",
       "price": 25000.0,
       "stock": 27,
       "category_id": "e5182812-d1b0-4585-99bf-6510497604ab",
@@ -372,6 +387,7 @@
     "fields": {
       "title": "Buah Naga",
       "description": "",
+      "piece": "kg",
       "price": 40000.0,
       "stock": 6,
       "category_id": "e5182812-d1b0-4585-99bf-6510497604ab",
@@ -387,6 +403,7 @@
     "fields": {
       "title": "Nanas",
       "description": "",
+      "piece": "buah",
       "price": 20000.0,
       "stock": 100,
       "category_id": "e5182812-d1b0-4585-99bf-6510497604ab",
@@ -402,6 +419,7 @@
     "fields": {
       "title": "Alpukat",
       "description": "",
+      "piece": "kg",
       "price": 30000.0,
       "stock": 61,
       "category_id": "e5182812-d1b0-4585-99bf-6510497602ab",

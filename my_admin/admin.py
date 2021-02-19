@@ -20,7 +20,7 @@ class CategoryAdmin(ModelAdmin):
 
 @admin.register(Product, site=admin_site)
 class ProductAdmin(ModelAdmin):
-    list_display = ('title', 'price', 'stock')
+    list_display = ('title','piece', 'price', 'stock')
     search_fields = ('title',)
 
 @admin.register(Status, site=admin_site)

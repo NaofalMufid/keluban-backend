@@ -34,7 +34,8 @@ class AddressSerializer(serializers.ModelSerializer):
     
     class Meta:
         model = Address
-        fields = ['id', 'customer', 'street', 'suite', 'city', 'zipcode']
+        fields = ['id', 'customer', 'street',  'city', 'zipcode']
+        # 'suite',
         read_only_fields = ['customer']
     
     def create(self, validated_data):

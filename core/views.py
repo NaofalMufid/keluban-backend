@@ -14,7 +14,7 @@ from .serializers import *
 from .models import *
 
 class ApiRoot(APIView):
-    name = 'api-root'
+    name = 'keluban-api'
     
     def get(self, request, *args, **kwargs):
 

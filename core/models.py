@@ -21,7 +21,7 @@ class Address(AutoCreateUpdatedMixin):
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     customer = models.ForeignKey(Customer, on_delete=models.CASCADE, related_name='user_client_address')
     street = models.CharField(max_length=200)
-    suite = models.CharField(max_length=200)
+    # suite = models.CharField(max_length=200)
     city = models.CharField(max_length=200)
     zipcode = models.CharField(max_length=200)
 
@@ -76,6 +76,7 @@ class Product(AutoCreateUpdatedMixin):
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     title = models.CharField(max_length=60)
     description = models.TextField(blank=True)
+    piece = models.CharField(max_length=30)
     price = models.FloatField()
     stock = models.IntegerField()
     category = models.ForeignKey(Category, on_delete=models.CASCADE, related_name="category_product")
