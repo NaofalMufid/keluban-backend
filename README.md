@@ -15,8 +15,3 @@ Email: admin@user.com
 Password: 123456
 ```
   * Open the host [localhost:8000/admin](http://localhost:8000/admin) 
-
-## :memo: License
-This project is under the MIT license. See the [LICENSE](LICENSE.md) for more information.
-
----
