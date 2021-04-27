@@ -20,8 +20,15 @@ class CategoryAdmin(ModelAdmin):
 
 @admin.register(Product, site=admin_site)
 class ProductAdmin(ModelAdmin):
-    list_display = ('title','piece', 'price', 'stock')
+    list_display = ('title','piece', 'price', 'stock', 'user')
     search_fields = ('title',)
+    exclude = ['user']
+    
+    def save(self, commit=True):
+        obj = super(ProductAdmin, self).save(False)
+        obj.user = self.user
+        commit and obj.save()
+        return http.HttpResponseRedirect(self.get_success_url())
 
 @admin.register(Status, site=admin_site)
 class StatusAdmin(ModelAdmin):

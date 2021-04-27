@@ -80,6 +80,8 @@ class Product(AutoCreateUpdatedMixin):
     price = models.FloatField()
     stock = models.IntegerField()
     category = models.ForeignKey(Category, on_delete=models.CASCADE, related_name="category_product")
+    # user = models.ForeignKey(UserClient, on_delete=models.CASCADE, related_name='user_creator')
+    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     image = models.ImageField(max_length=255, upload_to=upload_to)
     
     class Meta:
